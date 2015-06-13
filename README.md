@@ -19,7 +19,7 @@ By calling
 
     - (void)addSwipeGestureToView:(UIView*)view; 
 
-Menu is then built. If for any reasion you need to change the settigns of Menu call this function to update accordingly.
+Menu is then built. If for any reasion you need to change the settings of Menu call this function to update accordingly.
 
 
 Menu can also be called by UIButtion with (Dismissed with a simular function see .h file):
