@@ -15,7 +15,12 @@ In order to invoke Menu first assign the delegate if needed and then call as fol
     [Menu sharedInstance].blur = (UIBlurEffectStyle you wish to choose);
     [[Menu sharedInstance] addSwipeGestureToView:(UIView*)];
 
-By calling - (void)addSwipeGestureToView:(UIView*)view; Menu is then built. If for any reasion you need to change the settigns of Menu call this function to update accordingly.
+By calling 
+
+    - (void)addSwipeGestureToView:(UIView*)view; 
+
+Menu is then built. If for any reasion you need to change the settigns of Menu call this function to update accordingly.
+
 
 Menu can also be called by UIButtion with (Dismissed with a simular function see .h file):
 
