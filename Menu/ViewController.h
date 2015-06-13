@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Menu.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MenuDelegate> {
+    
+}
 
 
 @end

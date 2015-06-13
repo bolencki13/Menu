@@ -16,12 +16,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
+    self.view.frame = CGRectMake(SCREEN.size.width-225, 0, 225, SCREEN.size.height);
+
+    [Menu sharedInstance].delegate = self;
+    [Menu sharedInstance].leftSide = NO;
+    [Menu sharedInstance].blur = UIBlurEffectStyleDark;
+    [[Menu sharedInstance] addSwipeGestureToView:self.view];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark - Menu Delegate
+- (void)menuDidOpen {
 
+}
+- (void)menuDidClose {
+
+}
 @end
