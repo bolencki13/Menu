@@ -21,8 +21,9 @@
 
     [Menu sharedInstance].delegate = self;
     [Menu sharedInstance].leftSide = NO;
+    [Menu sharedInstance].useSubMenu = YES;
     [Menu sharedInstance].blur = UIBlurEffectStyleDark;
-    [[Menu sharedInstance] addSwipeGestureToView:self.view];
+    [[Menu sharedInstance] addSwipeGestureToView:self.view addTapGestureToView:self.view];
 }
 
 #pragma mark - Menu Delegate
@@ -30,6 +31,12 @@
 
 }
 - (void)menuDidClose {
-
+    
+}
+- (void)subMenuDidOpen {
+    
+}
+- (void)subMenuDidClose {
+    
 }
 @end
