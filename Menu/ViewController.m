@@ -28,15 +28,6 @@
 
 #pragma mark - Menu Delegate
 - (void)menuDidOpen {
-
-}
-- (void)menuDidClose {
-    
-}
-- (void)subMenuDidOpen {
-    
-}
-- (void)subMenuDidClose {
     
 }
 @end

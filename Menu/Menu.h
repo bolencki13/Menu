@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 
 @protocol MenuDelegate <NSObject>
+@optional
 - (void)menuDidOpen;
 - (void)menuDidClose;
 - (void)subMenuDidOpen;

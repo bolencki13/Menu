@@ -115,7 +115,7 @@ static CGRect overlayFrame;
         [overlay setFrame:overlayFrame];
     }
     
-    if (_delegate != nil) {
+    if ([_delegate respondsToSelector:@selector(menuDidOpen)]) {
         [_delegate menuDidOpen];
     }
 }
@@ -144,7 +144,7 @@ static CGRect overlayFrame;
         }
     }
 
-    if (_delegate != nil) {
+    if ([_delegate respondsToSelector:@selector(menuDidClose)]) {
         [_delegate menuDidClose];
     }
 }
@@ -159,7 +159,7 @@ static CGRect overlayFrame;
         [grabber setCenter:CGPointMake(dropDown.center.x, dropDown.frame.size.height-35)];
     }
     
-    if (_delegate != nil) {
+    if ([_delegate respondsToSelector:@selector(subMenuDidOpen)]) {
         [_delegate subMenuDidOpen];
     }
     _subMenuOnScreen = YES;
@@ -175,7 +175,7 @@ static CGRect overlayFrame;
         [grabber setCenter:CGPointMake(dropDown.center.x, dropDown.frame.size.height-5)];
     }
     
-    if (_delegate != nil) {
+    if ([_delegate respondsToSelector:@selector(subMenuDidClose)]) {
         [_delegate subMenuDidClose];
     }
     _subMenuOnScreen = NO;
